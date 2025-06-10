@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 using Hardcodet.Wpf.TaskbarNotification;
+using NHotkey.Wpf;
 using ScreenTranslatorApp;
 using System;
 using System.Diagnostics;

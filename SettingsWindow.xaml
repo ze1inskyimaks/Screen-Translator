@@ -3,13 +3,19 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Налаштування" Height="250" Width="400">
     <StackPanel Margin="20">
-        <TextBlock Text="Гаряча клавіша для розпізнавання:" />
-        <TextBox x:Name="HotkeyTextBox"
-                 PreviewKeyDown="HotkeyTextBox_PreviewKeyDown"
+        <TextBlock Text="Гаряча клавіша для розпізнавання під Метод 1:" />
+        <TextBox x:Name="HotkeyTextBoxForMethod1"
+                 PreviewKeyDown="HotkeyTextMethod1Box_PreviewKeyDown"
                  IsReadOnly="True"
                  Margin="0,0,0,10"
                  Height="25" />
-
+        
+        <TextBlock Text="Гаряча клавіша для розпізнавання відміни:" />
+        <TextBox x:Name="HotkeyTextBoxForCancel"
+                 PreviewKeyDown="HotkeyTextCancelBox_PreviewKeyDown"
+                 IsReadOnly="True"
+                 Margin="0,0,0,10"
+                 Height="25" />
 
         <TextBlock Text="Мова перекладу:" />
         <ComboBox Name="LanguageComboBox" Margin="0,5,0,15">

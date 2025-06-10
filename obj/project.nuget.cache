@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "1+EKeMrk50s=",
+  "dgSpecHash": "jgwIxS8GJ0o=",
   "success": true,
   "projectFilePath": "C:\\Storage\\BackEnd\\ScreenTranslatorApp\\ScreenTranslatorApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\_\\.nuget\\packages\\hardcodet.notifyicon.wpf\\2.0.1\\hardcodet.notifyicon.wpf.2.0.1.nupkg.sha512"
+    "C:\\Users\\_\\.nuget\\packages\\hardcodet.notifyicon.wpf\\2.0.1\\hardcodet.notifyicon.wpf.2.0.1.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\nhotkey\\3.0.0\\nhotkey.3.0.0.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\nhotkey.wpf\\3.0.0\\nhotkey.wpf.3.0.0.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512",
+    "C:\\Users\\_\\.nuget\\packages\\tesseract.drawing\\5.2.0\\tesseract.drawing.5.2.0.nupkg.sha512"
   ],
   "logs": []
 }

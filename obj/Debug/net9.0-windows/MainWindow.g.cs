@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using NHotkey.Wpf;
 using ScreenTranslatorApp;
 using System;
 using System.Diagnostics;

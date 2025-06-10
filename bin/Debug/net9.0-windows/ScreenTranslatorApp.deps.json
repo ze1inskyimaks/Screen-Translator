@@ -8,7 +8,10 @@
     ".NETCoreApp,Version=v9.0": {
       "ScreenTranslatorApp/1.0.0": {
         "dependencies": {
-          "Hardcodet.NotifyIcon.Wpf": "2.0.1"
+          "Hardcodet.NotifyIcon.Wpf": "2.0.1",
+          "NHotkey.Wpf": "3.0.0",
+          "Tesseract": "5.2.0",
+          "Tesseract.Drawing": "5.2.0"
         },
         "runtime": {
           "ScreenTranslatorApp.dll": {}
@@ -19,6 +22,55 @@
           "lib/net8.0-windows7.0/Hardcodet.NotifyIcon.Wpf.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.1.2717"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0": {},
+      "NHotkey/3.0.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/NHotkey.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "NHotkey.Wpf/3.0.0": {
+        "dependencies": {
+          "NHotkey": "3.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/NHotkey.Wpf.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {},
+      "Tesseract/5.2.0": {
+        "dependencies": {
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.0.0"
+          }
+        }
+      },
+      "Tesseract.Drawing/5.2.0": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0",
+          "Tesseract": "5.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.Drawing.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.0.0"
           }
         }
       }
@@ -36,6 +88,55 @@
       "sha512": "sha512-dtxmeZXzV2GzSm91aZ3hqzgoeVoARSkDPVCYfhVUNyyKBWYxMgNC0EcLiSYxD4Uc4alq/2qb3SmV8DgAENLRLQ==",
       "path": "hardcodet.notifyicon.wpf/2.0.1",
       "hashPath": "hardcodet.notifyicon.wpf.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "NHotkey/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IEghs0QqWsQYH0uUmvIl0Ye6RaebWRh38eB6ToOkDnQucTYRGFOgtig0gSxlwCszTilYFz3n1ZuY762x+kDR3A==",
+      "path": "nhotkey/3.0.0",
+      "hashPath": "nhotkey.3.0.0.nupkg.sha512"
+    },
+    "NHotkey.Wpf/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BIUKlhTG5KtFf9OQzWvkmVmktt5/FFj6AOEgag8Uf0R2YdZt5ajUzs3sVskcJcT2TztWlEHKQr1jFj3KQ0D9Nw==",
+      "path": "nhotkey.wpf/3.0.0",
+      "hashPath": "nhotkey.wpf.3.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "path": "system.drawing.common/6.0.0",
+      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
+    "Tesseract/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YB7feJlrTWSXtK8+WaCcseGSPK/1r2d2FWeKGyndlrPwYClrzTlCoHD4/oQEUjKafmpkWlhTZZ7pxiRJYZgj6w==",
+      "path": "tesseract/5.2.0",
+      "hashPath": "tesseract.5.2.0.nupkg.sha512"
+    },
+    "Tesseract.Drawing/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORuub0AagnAGPjdhO8qNxI6Z+2dXUmqWFy6qSjQ+Wr56SxQiV2jNvGM9Tpluvd7F5vwJeqXEWQnzFvGL6iHfjA==",
+      "path": "tesseract.drawing/5.2.0",
+      "hashPath": "tesseract.drawing.5.2.0.nupkg.sha512"
     }
   }
 }

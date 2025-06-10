@@ -1,4 +1,5 @@
 {
-  "Hotkey": "Ctrl\u002BQ",
-  "TargetLanguage": "en"
+  "HotkeyForMethod1": "Ctrl\u002BA",
+  "HotkeyForCancel": "Ctrl\u002BD",
+  "TargetLanguage": "uk"
 }

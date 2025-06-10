@@ -15,7 +15,8 @@ namespace ScreenTranslatorApp
 
             _config = AppConfig.Load();
 
-            HotkeyTextBox.Text = _config.Hotkey;
+            HotkeyTextBoxForMethod1.Text = _config.HotkeyForMethod1;
+            HotkeyTextBoxForCancel.Text = _config.HotkeyForCancel;
             foreach (ComboBoxItem item in LanguageComboBox.Items)
             {
                 if ((string)item.Tag == _config.TargetLanguage)
@@ -28,7 +29,8 @@ namespace ScreenTranslatorApp
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            _config.Hotkey = HotkeyTextBox.Text;
+            _config.HotkeyForMethod1 = HotkeyTextBoxForMethod1.Text;
+            _config.HotkeyForCancel = HotkeyTextBoxForCancel.Text;
 
             if (LanguageComboBox.SelectedItem is ComboBoxItem selectedItem)
                 _config.TargetLanguage = (string)selectedItem.Tag;
@@ -36,10 +38,34 @@ namespace ScreenTranslatorApp
             _config.Save();
         }
 
-        private void HotkeyTextBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        private void HotkeyTextMethod1Box_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
 
+            var modifiers = CatchHotKeyPressedButton(e);
+            if (modifiers is null)
+            {
+                return;
+            }
+
+            HotkeyTextBoxForMethod1.Text = string.Join("+", modifiers);
+        }
+        
+        private void HotkeyTextCancelBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+
+            var modifiers = CatchHotKeyPressedButton(e);
+            if (modifiers is null)
+            {
+                return;
+            }
+
+            HotkeyTextBoxForCancel.Text = string.Join("+", modifiers);
+        }
+
+        private List<string>? CatchHotKeyPressedButton(KeyEventArgs e)
+        {
             var modifiers = new List<string>();
             if ((Keyboard.Modifiers & ModifierKeys.Control) != 0)
                 modifiers.Add("Ctrl");
@@ -51,12 +77,11 @@ namespace ScreenTranslatorApp
                 modifiers.Add("Win");
 
             if (e.Key is Key.LeftCtrl or Key.RightCtrl or Key.LeftAlt or Key.RightAlt or Key.LeftShift or Key.RightShift or Key.LWin or Key.RWin)
-                return;
+                return null;
 
             var key = e.Key == Key.System ? e.SystemKey : e.Key;
             modifiers.Add(key.ToString());
-
-            HotkeyTextBox.Text = string.Join("+", modifiers);
+            return modifiers;
         }
     }
 }

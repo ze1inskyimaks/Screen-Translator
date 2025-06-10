@@ -1,4 +1,5 @@
 ﻿{
-  "Hotkey": "Ctrl+Shift+T",
+  "HotkeyForMethod1": "Shift+T",
+  "HotkeyForCancel": "Shift+D",
   "TargetLanguage": "en"
 }

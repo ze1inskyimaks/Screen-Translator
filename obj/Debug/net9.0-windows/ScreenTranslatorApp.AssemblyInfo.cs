@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScreenTranslatorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7169b5be043a793dd63f5805101436b8276bc503")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScreenTranslatorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScreenTranslatorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
