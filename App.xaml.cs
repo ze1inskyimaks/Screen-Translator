@@ -55,7 +55,7 @@ public partial class App : Application
     private async void OnHotkeyCancelPressed(object? sender, HotkeyEventArgs e)
     {
         _trayIcon.ShowBalloonTip("Translator!", $"Гаряча клавіша {_config.HotkeyForCancel} натиснута!", BalloonIcon.Info);
-        //TranslatorMethod.TranslatorCancel(); //TODO: Need to do it
+        TranslatorMethod.TranslatorCancel();
         e.Handled = true;
     }
 

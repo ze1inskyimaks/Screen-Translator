@@ -6,6 +6,9 @@ public static class TranslatorMethod
 {
     public static async Task TranslatorMethod_1(OcrEngine engine, TranslationService translatorMethod, CancellationToken cancellationToken)
     {
+        var loading = new LoadingWindow();
+        loading.Show();
+
         try
         {
             var screen = ScreenCapturer.CaptureFullScreen();
@@ -18,17 +21,20 @@ public static class TranslatorMethod
                 await translatorMethod.TranslateAsync(sentence, cancellationToken);
             }
 
-            var overlay = new OverlayWindow();
-            overlay.ShowTranslatedResults(listOfSentence);
+            OverlayWindow.Instance.ShowTranslatedResults(listOfSentence);
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
         }
+        finally
+        {
+            loading.Close();
+        }
     }
     
-    public static void TranslatorCancel(OverlayWindow overlay)
+    public static void TranslatorCancel()
     {
-        overlay.ClearOverlay();
+        OverlayWindow.Instance.ClearOverlay();
     }
 }

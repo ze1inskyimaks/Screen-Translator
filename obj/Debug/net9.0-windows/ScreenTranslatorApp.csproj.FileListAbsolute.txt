@@ -35,3 +35,5 @@ C:\Storage\BackEnd\ScreenTranslatorApp\bin\Debug\net9.0-windows\Tesseract.dll
 C:\Storage\BackEnd\ScreenTranslatorApp\bin\Debug\net9.0-windows\Tesseract.Drawing.dll
 C:\Storage\BackEnd\ScreenTranslatorApp\obj\Debug\net9.0-windows\OverlayWindow.baml
 C:\Storage\BackEnd\ScreenTranslatorApp\obj\Debug\net9.0-windows\OverlayWindow.g.cs
+C:\Storage\BackEnd\ScreenTranslatorApp\obj\Debug\net9.0-windows\LoadingWindow.baml
+C:\Storage\BackEnd\ScreenTranslatorApp\obj\Debug\net9.0-windows\LoadingWindow.g.cs
